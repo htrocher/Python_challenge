@@ -1,7 +1,15 @@
+# import dependencies
+
 import pandas as pd
+import sys
+
+# set the file for text output instead of console
+
+sys.stdout = open('/Users/hugotroche/GitHub/Python_challenge/PY_Poll/Analysis_P/Analysis_P_R1.txt',"w")
+
 
 # Load the dataset
-file_path = '/Users/hugotroche/Desktop/Bootcamp/Challenges/Challenge 3 /Poll_1/Resources/election_data.csv'
+file_path = '/Users/hugotroche/GitHub/Python_challenge/PY_Poll/Resources_P/election_data.csv'
 df = pd.read_csv(file_path)
 
 # 1) Total number of votes cast from "Ballot ID"

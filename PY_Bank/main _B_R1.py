@@ -1,9 +1,16 @@
 
+# import dependencies
 
 import pandas as pd
+import sys
+
+# set the file for text output instead of console
+
+sys.stdout = open('/Users/hugotroche/GitHub/Python_challenge/PY_Bank/Analysis_B/Analysis_B_R1.txt',"w")
+
 
 # Load the dataset
-file_path = '//Users/hugotroche/Desktop/Bootcamp/Challenges/Challenge 3 /Bank_1/Resources/budget_data.csv'
+file_path = '/Users/hugotroche/GitHub/Python_challenge/PY_Bank/Resources_B/budget_data.csv'
 df = pd.read_csv(file_path)
 
 # 1) Total number of months
